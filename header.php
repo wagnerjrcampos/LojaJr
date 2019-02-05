@@ -24,8 +24,18 @@
 ) );
 ?>
 
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand" href="index.php">
+    <img src="<?php bloginfo('template_url'); ?>/logo.png" width="60" height="45" class="d-inline-block align-top" alt="">
+  </a>
+	<form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+  </form>
+</nav>
 
-<nav class="navbar navbar-expand-md navbar-light bg-warning" role="navigation">
+<nav class="navbar navbar-expand-md navbar-light bg-info" role="navigation">
 
   <div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
@@ -57,13 +67,13 @@
   	</ol>
   		<div class="carousel-inner">
    	 		<div class="carousel-item active">
-     		<img src="<?php bloginfo('template_url'); ?>/restaurante.jpg" class="d-block w-100" alt="...">
+     		<img src="<?php bloginfo('template_url'); ?>/produto.jpg" class="d-block w-100" alt="...">
     	</div>
     	<div class="carousel-item">
-      		<img src="<?php bloginfo('template_url'); ?>/bar.jpg" class="d-block w-100" alt="...">
+      		<img src="<?php bloginfo('template_url'); ?>/produto2.jpg" class="d-block w-100" alt="...">
     	</div>
     <div class="carousel-item">
-      <img src="<?php bloginfo('template_url'); ?>/bebidas.jpg" class="d-block w-100" alt="...">
+      <img src="<?php bloginfo('template_url'); ?>/produto3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
