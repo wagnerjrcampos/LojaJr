@@ -11,26 +11,15 @@
 </head>
 <body>
 
-<?php        
-    wp_nav_menu( array(
-	'theme_location'  => 'primary',
-	'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
-	'container'       => 'div',
-	'container_class' => 'collapse navbar-collapse',
-	'container_id'    => 'bs-example-navbar-collapse-1',
-	'menu_class'      => 'navbar-nav mr-auto',
-	'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-	'walker'          => new WP_Bootstrap_Navwalker(),
-) );
-?>
+
 
 <!-- Image and text -->
 <nav class="navbar navbar-light bg-dark">
   <a class="navbar-brand" href="index.php">
     <img src="<?php bloginfo('template_url'); ?>/logo.png" width="60" height="45" class="d-inline-block align-top" alt="">
-  </a>
-	<form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+	</a>
+	<form role="search" method="get" id="searchform" action="http://localhost/wordpress/" class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" name="s" id="s">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
   </form>
 </nav>
@@ -43,7 +32,8 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<a class="navbar-brand" href="#"></a>
-		
+	
+
 		<?php
 		wp_nav_menu( array(
 			'theme_location'    => 'primary',

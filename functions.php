@@ -14,10 +14,10 @@ add_theme_support( 'post-thumbnails' );
         {
             register_sidebar(array(
                 'name'              => 'Sidebar_1',
-                'before_widget'     => '<div class="widget">',
+                'before_widget'     => '<div class="row"><div class="col">',
                 'after_widget'      => '</div>',
-                'before_title'      => '<h3>',
-                'after_title'       => '</h3>',
+                'before_title'      => '',
+                'after_title'       => '',
             ));
         }
 
